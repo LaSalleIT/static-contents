@@ -1,0 +1,3 @@
+<div id="sma-settings" style="display: none;">simpleRequest/getAll</div>
+<div id="sma-widget"></div>
+<script src="//lasalleit.github.io/static-contents/sma.js"></script>
