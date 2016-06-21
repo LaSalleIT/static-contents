@@ -22,6 +22,6 @@ load('https://lasalleit.github.io/static-contents/autolink.js', 'js');
 load('https://lasalleit.githbu.io/static-contents/twitter-text.js', 'js');
 load('https://lasalleit.github.io/static-contents/narrow.css', 'css');
 load('https://lasalleit.github.io/static-contents/sma.css', 'css');
-document.getElementById("sma-widget").innerHTML='<object type="text/html" data="https://lscode.lschs.org/sma/views/vue"'+ 
-document.getElementById("sma-widget-query") +'</object>';
+document.getElementById("sma-widget").innerHTML='<object type="text/html" data="https://lscode.lschs.org/sma/views/vue?query='+ 
+document.getElementById("sma-widget-query") +'"></object>';
 
