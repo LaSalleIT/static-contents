@@ -1,0 +1,41 @@
+    * { box-sizing: border-box; }
+        /* fix wrapping issue */
+        .soft-wrapping {
+            /* These are technically the same, but use both */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            /* Instead use this non-standard one: */
+            word-break: break-word;
+            /* Adds a hyphen where the word breaks, if supported (No Blink) */
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+        .grid {
+          max-width: 1200px;
+        }
+        /* fluid 5 columns */
+        .grid-sizer,
+        .grid-item {
+          width: 20%;
+        }
+  /* clearfix */
+        .grid:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        .grid-item {
+          float: left;
+        }
+        /* 2 columns */
+        .grid-item--width2 {
+          width: 40%;
+        }
+        @media  {
+            .col-md-6:nth-child(2n+1) {
+                clear: left;
+            }
+        }
