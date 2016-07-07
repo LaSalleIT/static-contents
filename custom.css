@@ -13,6 +13,10 @@
             hyphens: auto;
         }
 
+.container {
+    background: #bdc3c7;
+}
+
 .row {
     width: 95%;
     margin: 3em auto;
