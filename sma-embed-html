@@ -1,3 +1,12 @@
-<div id="sma-settings" style="display: none;">simpleRequest/getAll</div>
-<div id="sma-widget"></div>
-<script src="//lasalleit.github.io/static-contents/sma.js"></script>
+<html>
+    <head>
+      <meta charset="utf8">
+    </head>
+    <body>
+      <div id="query-settings" class="simpleRequest/getAll"></div>
+      <div class="sma-widget-container"></div>
+    </body>
+    <div class="af-ctrl-postrender">
+      <script src="//lasalleit.github.io/static-contents/sma.js"></script>
+    </div>
+</html>
