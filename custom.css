@@ -67,7 +67,7 @@
 }
 
 @media only screen and (min-width: 1100px) {
-    .grid-item {
+    .grid {
         -moz-column-count: 5;
         -webkit-column-count: 5;
         column-count: 5;
