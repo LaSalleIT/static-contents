@@ -13,6 +13,10 @@
             hyphens: auto;
         }
 
+.icon-color {
+	color: #003366;
+}
+
 .container {
     background: #ecf0f1;
 }
