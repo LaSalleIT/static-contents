@@ -64,9 +64,7 @@
 .modal {
     position: absolute;
     top: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: 50%; /* CENTTEERRR IT!! */
+    left: 25%;
 }
 
 /* CSS masonry grid system */
