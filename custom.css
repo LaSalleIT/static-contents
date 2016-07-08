@@ -1,12 +1,22 @@
-        /* fix wrapping issue */
+/**
+ * Social Media Aggregator Stylesheet
+ * Copyright (c) Alex Fang
+ */
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+/* fix wrapping issue */
 .soft-wrapping {
-	/* These are technically the same, but use both */
        	overflow-wrap: break-word;
         word-wrap: break-word;
        	-ms-word-break: break-all;
-        /* Instead use this non-standard one: */
         word-break: break-word;
-        /* Adds a hyphen where the word breaks, if supported (No Blink) */
         -ms-hyphens: auto;
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
@@ -49,6 +59,8 @@
     box-sizing: border-box;
 }
 
+/* CSS masonry grid system */
+
 .grid {
     margin: 1.5em 0;
     padding: 0;
@@ -71,6 +83,8 @@
     box-shadow: 2px 2px 4px 0 #ccc;
     box-sizing: border-box;
 }
+
+/* make y'all responsive */
 
 @media only screen and (min-width: 400px) {
     .grid {
