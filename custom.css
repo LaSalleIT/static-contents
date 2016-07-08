@@ -96,6 +96,7 @@
     -webkit-box-sizing: border-box;
     box-shadow: 2px 2px 4px 0 #ccc;
     box-sizing: border-box;
+    cursor:pointer; /* ipad fix */
 }
 
 /* make y'all responsive */
