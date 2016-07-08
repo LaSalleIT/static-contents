@@ -25,6 +25,24 @@
     background: #ecf0f1;
 }
 
+/* bootstrap-defined row */
+.row {
+  margin-right: -.9375rem;
+  margin-left: -.9375rem;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+/* jumbotron row */
+
 .row {
     width: 95%;
     margin: 3em auto;
