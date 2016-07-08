@@ -11,6 +11,10 @@
 	float: right;
 }
 
+.fa-times-circle-o {
+	float: right;  /* quickfix */
+}
+
 /* fix wrapping issue */
 .soft-wrapping {
        	overflow-wrap: break-word;
