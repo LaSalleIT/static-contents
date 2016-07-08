@@ -13,6 +13,11 @@
 
 .fa-times-circle-o {
 	float: right;  /* quickfix */
+	color: #bdc3c7;
+}
+
+.fa-times-circle-o:hover {
+	color : #336699;
 }
 
 /* fix wrapping issue */
@@ -28,7 +33,8 @@
 }
 
 .icon-color {
-	color: #ecf0f1;
+	/*	color: #ecf0f1; */
+	color: #bdc3c7;
 }
 
 .icon-color:hover {
