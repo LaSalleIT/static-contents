@@ -71,7 +71,9 @@
 
 /* overwrite bootstrap modal */
 
-/**/
+.modal {
+	cursor: default; /* overwrite grid-item */
+}
 
 /* CSS masonry grid system */
 
