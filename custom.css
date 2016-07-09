@@ -102,7 +102,7 @@
 }
 
 .gird-item:hover {
-	border-shadow: 4px 4px 0 #bbaa66;
+	border-shadow: 4px 4px 4px 0 #bbaa66;
 }
 
 /* make y'all responsive */
