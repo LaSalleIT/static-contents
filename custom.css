@@ -96,13 +96,13 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
+    box-shadow: 2px 2px 4px 0 #bbaa44; /* #ccc */
     box-sizing: border-box;
     cursor:pointer; /* ipad fix */
 }
 
 .gird-item:hover {
-	border-shadow: 4px 4px 4px 0 #bbaa66;
+	
 }
 
 /* make y'all responsive */
