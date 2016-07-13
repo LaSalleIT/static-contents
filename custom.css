@@ -66,7 +66,7 @@
 .row {
     width: 95%;
     margin: 3em auto;
-    box-sizing: border-box;
+   /* box-sizing: border-box; */
 }
 
 /* overwrite bootstrap modal */
@@ -84,7 +84,7 @@
     -webkit-column-gap: 1.5em;
     column-gap: 1.5em;
     font-size: .85em;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .grid-item {
