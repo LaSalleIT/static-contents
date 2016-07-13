@@ -44,7 +44,7 @@
 .container {
     background: #ecf0f1;
 }
-/*
+
 .row {
   margin-right: -.9375rem;
   margin-left: -.9375rem;
@@ -65,7 +65,7 @@
     width: 95%;
     margin: 3em auto;
 }
-*/
+
 
 .modal {
 	cursor: default; /* overwrite grid-item */
