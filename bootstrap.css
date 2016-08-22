@@ -1300,19 +1300,19 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -100%); /* -25% */
-  -ms-transform: translate(0, -100%);
-  -o-transform: translate(0, -100%);
-  transform: translate(0, -100%);
+  -webkit-transform: translate(0, 100%); /* -25% */
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
   -webkit-transition: -webkit-transform 0s ease-out;
   -o-transition: -o-transform 0s ease-out;
   transition: transform 0s ease-out;
 }
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, -100%);
-  -ms-transform: translate(0, -100%);
-  -o-transform: translate(0, -100%);
-  transform: translate(0, -100%);
+  -webkit-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
 }
 .modal-open .modal {
   overflow-x: hidden;
