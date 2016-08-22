@@ -1321,7 +1321,7 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 15px;
+  margin: 5px;
 }
 .modal-content {
   position: relative;
