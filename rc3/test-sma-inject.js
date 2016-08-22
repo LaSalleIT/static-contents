@@ -77,7 +77,7 @@
                 if (finalResult.length > 1) {
                     originalText = ' <div class="grid-item" id="vue-js-binding" v-for="tweet in tweets"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                    <img src="{{ tweet.mediaurl }} " class="img-responsive" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
+                    <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
                 </div> \
             <div class="panel-body hvr-grow" data-toggle="modal" data-target="#{{ tweet.count }}"> \
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
@@ -118,7 +118,7 @@
                         originalText = originalText + ' <div class="grid-item hidden-binding-group-' + k + '" id="vue-js-binding-' + k + '" v-for="tweet in tweets" \
          style="display: none;"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                    <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
+                    <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
                 </div> \
             <div class="panel-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
@@ -181,7 +181,7 @@
                     document.getElementById("sma-widget-container").innerHTML = ' <div class="grid-item" id="vue-js-binding" \
                       v-for="tweet in tweets"> \
             <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
+                <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
             </div> \
         <div class="panel-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
             <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
