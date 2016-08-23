@@ -76,9 +76,11 @@
                 var originalText;
                 if (finalResult.length > 1) {
                     originalText = ' <div class="grid-item" id="vue-js-binding" v-for="tweet in tweets"> \
+            <div style="max-width: 50%;" id="horizontal-resize"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                     <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
                 </div> \
+            </div> \
             <div class="panel-body hvr-grow" data-toggle="modal" data-target="#{{ tweet.count }}"> \
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
                 <br> \
@@ -93,7 +95,7 @@
                     <div class="modal-header"> \
                         <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
                         </i> \
-                    <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
+                    <h4 style="max-width: 50%;" class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                 </div> \
                 <div class="modal-body"> \
                     <div id="inline-media" v-if=" tweet.ifmediaexists "> \
