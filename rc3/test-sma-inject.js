@@ -145,7 +145,7 @@
                 <div class="modal-body"> \
                 <div style="max-width: 50%;" id="horizontal-resize"> \
                     <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                        <img src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
+                        <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                     </div> \
                	</div> \
                     <br><br> \
