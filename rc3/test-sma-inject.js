@@ -102,7 +102,7 @@
                     </div> \
                 </div> \
 						<br><br> \
-		<div id="text-resize"> \
+		<div style="overflow: hidden;" id="text-resize"> \
                     <h4 style="padding-left: 10px; color: black;">{{{ tweet.text }}}</h4> \
 						<br><br> \
 		<div id="buttom-buttons"> \
