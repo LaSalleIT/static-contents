@@ -149,7 +149,9 @@
                     </div> \
                	</div> \
                     <br><br> \
+                <div style="overflow: hidden;" id="text-resize"> \
 			<h4 style="padding-left: 10px; max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
+		</div> \
 					<br><br> \
                 </div> \
                 <div class="modal-footer"> \
@@ -208,11 +210,15 @@
                     <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                 </div> \
                 <div class="modal-body"> \
+                <div style="max-width: 50%;" id="horizontal-resize"> \
                     <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                         <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                     </div> \
+                </div> \
 					<br><br> \
+		<div style="overflow: hidden;" id="text-resize"> \
                     <h4 class="align-right" style="color: black;">{{{ tweet.text }}}</h4> \
+                </div> \
 					<br><br> \
                 </div> \
                 <div class="modal-footer"> \
