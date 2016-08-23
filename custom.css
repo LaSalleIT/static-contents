@@ -1,7 +1,56 @@
 /**
  * Social Media Aggregator Stylesheet
- * Copyright (c) Alex Fang
+ * Copyright (c) La Salle College High School, ALL RIGHTS RESERVED.
+ * This code is available, free and opensource, for educational and non-profit purposes.
+ * Any unauthorized commercial of this code is banned and subject to legal action.
  */
+
+
+/* Buzz */
+@-webkit-keyframes btn-default {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes btn-default {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.btn-default {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  -webkit-animation-name: btn-default;
+  animation-name: btn-default;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 
 .align-left {
 	float: left;
