@@ -44,6 +44,8 @@
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active {
   border-radius: 15px 5px 15px 5px;
+  color: white;
+  background: #abbaa44;
   -webkit-animation-name: btn-default;
   animation-name: btn-default;
   -webkit-animation-duration: 0.15s;
