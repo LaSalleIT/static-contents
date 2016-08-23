@@ -7,6 +7,10 @@
 	float: left;
 }
 
+div#text-resize {
+	overflow:hidden;
+}
+
 div.modal-body p.align-left {
 	position: relative;
 	padding: 10px;
