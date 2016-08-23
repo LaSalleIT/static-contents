@@ -33,6 +33,7 @@
 
 .btn-default {
   display: inline-block;
+  border-radius: 0px 0px 0px 0px;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -42,6 +43,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active {
+  border-radius: 15px 5px 15px 5px;
   -webkit-animation-name: btn-default;
   animation-name: btn-default;
   -webkit-animation-duration: 0.15s;
