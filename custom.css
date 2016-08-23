@@ -92,7 +92,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #bbaa44; /* #ccc */
+    box-shadow: 2px 2px 4px 0 #ccc; /* #abbaa44 */
     box-sizing: border-box;
     cursor:pointer; /* ipad fix */
     z-index: 1000; /* <Real World CSS>, OR LY & Associates, LLC.  */
