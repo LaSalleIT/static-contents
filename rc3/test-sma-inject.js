@@ -104,11 +104,13 @@
 						<br><br> \
                     <h4 class="align-right" style="max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
 						<br><br> \
+		<div id="buttom-buttons"> \
+			<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
+                	<span class="icon-color"><i class="fa fa-comment fa-2x"></i></span> {{ tweet.comments }}</a></p> \
+                    	<p class="align-right"><a href="{{ tweet.url }}">Original Post</a></p> \
+                </div> \
                 </div> \
                 <div class="modal-footer"> \
-                    <p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
-                    <span class="icon-color"><i class="fa fa-comment fa-2x"></i></span> {{ tweet.comments }}</a></p> \
-                    <p class="align-right"><a href="{{ tweet.url }}">Original Post</a></p> \
 				  <div style="clear: both;"></div> \
                 </div> \
                 </div> \
