@@ -6,21 +6,21 @@
 .align-left {
 	float: left;
 }
-/*
-p.align-left {
+
+div.modal-footer p.align-left {
 	position: absolute;
 	bottom: 0;
 	right: 35%;
 	padding: 10px;
 }
 
-p.align-right{
+div.modal-footer p.align-right{
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	padding: 10px;
 }
-*/
+
 .align-right {
 	float: right;
 }
