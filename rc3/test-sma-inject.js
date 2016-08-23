@@ -139,9 +139,11 @@
                     <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                 </div> \
                 <div class="modal-body"> \
+                <div style="max-width: 50%;" id="horizontal-resize"> \
                     <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                         <img src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                     </div> \
+               	</div> \
                     <br><br> \
 					<h4 style="color: black;">{{{ tweet.text }}}</h4> \
 					<br><br> \
