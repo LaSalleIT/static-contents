@@ -7,14 +7,14 @@
 	float: left;
 }
 
-div.modal-footer p.align-left {
+div.modal-body p.align-left {
 	position: absolute;
 	bottom: 0;
 	right: 35%;
 	padding: 10px;
 }
 
-div.modal-footer p.align-right{
+div.modal-body p.align-right{
 	position: absolute;
 	bottom: 0;
 	right: 0;
