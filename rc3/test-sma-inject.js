@@ -118,7 +118,8 @@
                 </div> \
             </div> \
         </div> \
-    </div> \
+   </div> \
+ </div> \
                 ';
                     for (var k = 1; k < finalResult.length; k++) {
                         originalText = originalText + ' <div class="grid-item hidden-binding-group-' + k + '" id="vue-js-binding-' + k + '" v-for="tweet in tweets" \
