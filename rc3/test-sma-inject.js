@@ -2,7 +2,7 @@
          *  LSTweets renderer Vue frontend
          * Formulates JSON data from the renderer and
          * displays in HTML
-         * @author Alex Fang
+         * @author Alex Fang, Owen Lanphear
          * @email alex [at] lschs.org
          * @date 6/8/2016
  ______________ 
@@ -79,7 +79,7 @@
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                     <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
                 </div> \
-            <div class="panel-body hvr-grow" data-toggle="modal" data-target="#{{ tweet.count }}"> \
+            <div class="grid-item-body hvr-grow" data-toggle="modal" data-target="#{{ tweet.count }}"> \
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
                 <br> \
             </div> \
@@ -126,7 +126,7 @@
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                     <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
                 </div> \
-            <div class="panel-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
+            <div class="grid-item-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
                 <br> \
             </div> \
@@ -196,7 +196,7 @@
             <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                 <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
             </div> \
-        <div class="panel-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
+        <div class="grid-item-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
             <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
             <br> \
         </div> \
