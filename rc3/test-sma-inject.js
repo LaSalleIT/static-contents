@@ -96,13 +96,13 @@
                     <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                 </div> \
                 <div class="modal-body"> \
-                <div style="max-width: 50%;" id="horizontal-resize"> \
+                <div style="max-width: 45%;" id="horizontal-resize"> \
                     <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                         <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                     </div> \
                 </div> \
 						<br><br> \
-                    <h4 class="align-right" style="color: black;">{{{ tweet.text }}}</h4> \
+                    <h4 class="align-right" style="max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
 						<br><br> \
                 </div> \
                 <div class="modal-footer"> \
@@ -139,13 +139,13 @@
                     <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                 </div> \
                 <div class="modal-body"> \
-                <div style="max-width: 50%;" id="horizontal-resize"> \
+                <div style="max-width: 45%;" id="horizontal-resize"> \
                     <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                         <img src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                     </div> \
                	</div> \
                     <br><br> \
-					<h4 style="color: black;">{{{ tweet.text }}}</h4> \
+					<h4 style="max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
 					<br><br> \
                 </div> \
                 <div class="modal-footer"> \
