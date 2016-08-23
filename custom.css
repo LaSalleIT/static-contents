@@ -43,8 +43,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active {
-  border-radius: 15px 5px 15px 5px;
-  color: white;
+  border-radius: 15px 0px 15px 0px;
+  color: #cfb53b;
   background: #abbaa44;
   -webkit-animation-name: btn-default;
   animation-name: btn-default;
