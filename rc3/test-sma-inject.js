@@ -102,7 +102,7 @@
                     </div> \
                 </div> \
 						<br><br> \
-                    <h4 class="align-right" style="max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
+                    <h4 class="align-right" style="color: black;">{{{ tweet.text }}}</h4> \
 						<br><br> \
                 </div> \
                 <div class="modal-footer"> \
@@ -145,7 +145,7 @@
                     </div> \
                	</div> \
                     <br><br> \
-					<h4 style="max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
+					<h4 style="color: black;">{{{ tweet.text }}}</h4> \
 					<br><br> \
                 </div> \
                 <div class="modal-footer"> \
