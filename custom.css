@@ -110,6 +110,9 @@ div.modal-body p.align-right{
     box-sizing: border-box;
     cursor:pointer; /* ipad fix */
     z-index: 1000; /* <Real World CSS>, OR LY & Associates, LLC.  */
+    -webkit-column-break-inside: avoid; /* suggested by http://stackoverflow.com/questions/18024269/css3-columns-background-cutoff */
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
 }
 
 .gird-item:hover {
