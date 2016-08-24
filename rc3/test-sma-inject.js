@@ -75,7 +75,7 @@
                 }
                 var originalText;
                 if (finalResult.length > 1) {
-                    originalText = ' <div class="grid-item hvr-underline-reveal" id="vue-js-binding" v-for="tweet in tweets"> \
+                    originalText = ' <div class="grid-item" id="vue-js-binding" v-for="tweet in tweets"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                     <img src="{{ tweet.mediaurl }} " class="img-responsive" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
                 </div> \
