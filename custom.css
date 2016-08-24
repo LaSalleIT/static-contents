@@ -68,7 +68,9 @@ div.modal-body p.align-left {
 	position: relative;
 	padding: 10px;
 }
-
+div#text-resize{
+	padding-left: 10px;
+}
 div.modal-body p.align-right{
 	position: relative;
 	padding: 10px;
