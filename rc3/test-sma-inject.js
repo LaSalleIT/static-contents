@@ -75,11 +75,11 @@
                 }
                 var originalText;
                 if (finalResult.length > 1) {
-                    originalText = ' <div class="grid-item" id="vue-js-binding" v-for="tweet in tweets"> \
+                    originalText = ' <div class="grid-item hvr-underline-reveal" id="vue-js-binding" v-for="tweet in tweets"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                    <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
+                    <img src="{{ tweet.mediaurl }} " class="img-responsive" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
                 </div> \
-            <div class="grid-item-body hvr-grow" data-toggle="modal" data-target="#{{ tweet.count }}"> \
+            <div class="grid-item-body" data-toggle="modal" data-target="#{{ tweet.count }}"> \
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
                 <br> \
             </div> \
@@ -106,7 +106,7 @@
                     			<h4 style="padding-left: 10px; color: black;">{{{ tweet.text }}}</h4> \
 						<br><br> \
 					<div id="buttom-buttons"> \
-						<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x hvr-buzz"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
+						<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
                 				<span class="icon-color"><i class="fa fa-comment fa-2x"></i></span> {{ tweet.comments }}</a></p> \
                     				<p class="align-right"><a href="{{ tweet.url }}">Original Post</a></p> \
                 			</div> \
@@ -124,9 +124,9 @@
                         originalText = originalText + ' <div class="grid-item hidden-binding-group-' + k + '" id="vue-js-binding-' + k + '" v-for="tweet in tweets" \
          style="display: none;"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                    <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
+                    <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
                 </div> \
-            <div class="grid-item-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
+            <div class="grid-item-body"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
                 <br> \
             </div> \
@@ -194,9 +194,9 @@
                     document.getElementById("sma-widget-container").innerHTML = ' <div class="grid-item" id="vue-js-binding" \
                       v-for="tweet in tweets"> \
             <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                <img src="{{ tweet.mediaurl }} " class="img-responsive hvr-grow" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
+                <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
             </div> \
-        <div class="grid-item-body hvr-grow"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
+        <div class="grid-item-body"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
             <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
             <br> \
         </div> \
