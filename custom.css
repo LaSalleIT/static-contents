@@ -142,7 +142,7 @@ div.modal-body p.align-right{
 
 .grid {
     margin: 1.5em 0;
-    padding: 0.8em;
+    padding: 0;
     -moz-column-gap: 1.5em;
     -webkit-column-gap: 1.5em;
     column-gap: 1.5em;
@@ -153,7 +153,7 @@ div.modal-body p.align-right{
 .grid-item {
     display: inline-block;
     background: #fff;
-    padding: 0;
+    padding: 0.8em;
     margin: 0 0 1.5em;
     width: 100%;
     box-sizing: border-box;
