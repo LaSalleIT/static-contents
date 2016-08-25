@@ -140,6 +140,15 @@ div.modal-body p.align-right{
 	cursor: default; /* overwrite grid-item */
 }
 
+h4.align-right {
+  padding: 0.8em;
+}
+
+.modal-footer {
+  padding: 0.8em;
+
+}
+
 /* CSS masonry grid system */
 
 .grid {
@@ -175,6 +184,7 @@ div.modal-body p.align-right{
 .grid-item-footer {
   padding: 0.8em;
 }
+
 /* .grid-item-post for all within the grid-item not including the modal */
 .grid-item-post {
     display: inline-block;
