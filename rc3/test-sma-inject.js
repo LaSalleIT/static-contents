@@ -105,10 +105,8 @@
                   </i> \
                   <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                   </div> \
-                  <div class="modal-content"> \
                     			<h4 style="padding-left: 10px; color: black;">{{{ tweet.text }}}</h4> \
 						<br><br> \
-            </div> \
             <div class="modal-footer"> \
 					<div id="buttom-buttons"> \
 						<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
@@ -150,7 +148,6 @@
                         			<img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                     			</div> \
                			</div> \
-                    							<br><br> \
                 		<div style="overflow: hidden;" id="text-resize"> \
                     <div class="modal-content"> \
                         <div class="modal-header"> \
@@ -158,10 +155,8 @@
                             </i> \
                         <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                     </div> \
-                    <div class="modal-content"> \
 					<h4 style="padding-left: 10px; max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
 					<br><br> \
-          </div> \
           <div class="modal-footer"> \
                 			<div id="buttom-buttons"> \
 						<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
@@ -234,10 +229,8 @@
                   </i> \
               <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
           </div> \
-          <div class="modal-content"> \
                     		<h4 class="align-right" style="color: black;">{{{ tweet.text }}}</h4> \
 					<br><br> \
-          </div> \
           <div class="modal-footer"> \
                 		<div id="buttom-buttons"> \
 					<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
