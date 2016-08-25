@@ -141,6 +141,7 @@
 	</div> \
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
+               <div class="modal-content"> \
                 	<div class="modal-body"> \
                 		<div style="max-width: 50%;" id="horizontal-resize"> \
                     			<div id="inline-media" v-if=" tweet.ifmediaexists "> \
