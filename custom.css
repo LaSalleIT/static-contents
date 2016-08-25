@@ -174,8 +174,14 @@ div.modal-body p.align-right{
 	
 }
 
+/* .grid-item-body in lieu of .panel-body to be more consistent with padding */
 .grid-item-body {
-	
+	/* */
+}
+
+/* .grid-item-post for all within the grid-item not including the modal */
+.grid-item-post {
+	/* */
 }
 
 /* make y'all responsive */
