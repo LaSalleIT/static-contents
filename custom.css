@@ -6,7 +6,7 @@
  */
 
 
-/* Buzz */
+/* Buzz
 @-webkit-keyframes btn-default {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -29,7 +29,7 @@
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
   }
-}
+} */
 
 .btn-default {
   display: inline-block;
