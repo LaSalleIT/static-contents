@@ -98,7 +98,6 @@
                         			<img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                     			</div> \
                 		</div> \
-						<br><br> \
 				<div style="overflow: hidden;" id="text-resize"> \
             <div class="modal-header"> \
                 <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
@@ -149,7 +148,6 @@
                     			</div> \
                			</div> \
                 		<div style="overflow: hidden;" id="text-resize"> \
-                    <div class="modal-content"> \
                         <div class="modal-header"> \
                             <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
                             </i> \
