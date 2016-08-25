@@ -140,8 +140,8 @@ div.modal-body p.align-right{
 	cursor: default; /* overwrite grid-item */
 }
 
-h4.align-right {
-  padding: 1.3em;
+.modal-news-content {
+  padding: 0.8em;
 }
 
 .modal-footer {
