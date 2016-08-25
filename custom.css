@@ -158,11 +158,16 @@ div.modal-body p.align-right{
     -webkit-column-break-inside: avoid; /* suggested by http://stackoverflow.com/questions/18024269/css3-columns-background-cutoff */
     -moz-column-break-inside: avoid;
     column-break-inside: avoid;
+      display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* .grid-item-body in lieu of .panel-body to be more consistent with padding */
 .grid-item-body {
-	/* */
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* .grid-item-post for all within the grid-item not including the modal */
@@ -180,6 +185,9 @@ div.modal-body p.align-right{
     box-shadow: 2px 2px 4px 0 #ccc; /* #abbaa44 */
     box-sizing: border-box;
     cursor:pointer; /* ipad fix */
+      display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* make y'all responsive */
