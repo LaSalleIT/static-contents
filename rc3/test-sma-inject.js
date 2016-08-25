@@ -76,6 +76,7 @@
                 var originalText;
                 if (finalResult.length > 1) {
                     originalText = ' <div class="grid-item" id="vue-js-binding" v-for="tweet in tweets"> \
+                    <div class="grid-item-post hvr-grow"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                     <img src="{{ tweet.mediaurl }} " class="img-responsive" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
                 </div> \
@@ -87,6 +88,7 @@
                     <span class="icon-color"><i class="fa fa-comment fa-lg"></i></span> {{ tweet.comments }}</a></p> \
 		 <p class="align-right"><a href="{{ tweet.url }}"><span class="icon-color">{{{ tweet.renderedClientThumbnail }}}</span></a></p> \
 		 <div style="clear: both;"></div> \
+		 </div> \
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
                 <div class="modal-content"> \
@@ -123,6 +125,7 @@
                     for (var k = 1; k < finalResult.length; k++) {
                         originalText = originalText + ' <div class="grid-item hidden-binding-group-' + k + '" id="vue-js-binding-' + k + '" v-for="tweet in tweets" \
          style="display: none;"> \
+         <div class="grid-item-post hvr-grow"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                     <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
                 </div> \
@@ -134,6 +137,7 @@
                     <span class="icon-color"><i class="fa fa-comment fa-lg"></i></span> {{ tweet.comments }} </a></p> \
       	<p class="align-right"><a href="{{ tweet.url }}"><span class="icon-color"> {{{ tweet.renderedClientThumbnail }}} </span></a></p> \
 		<div style="clear: both;"></div> \
+	</div> \
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
                 <div class="modal-content"> \
@@ -193,6 +197,7 @@
                 else { //not
                     document.getElementById("sma-widget-container").innerHTML = ' <div class="grid-item" id="vue-js-binding" \
                       v-for="tweet in tweets"> \
+                      <div class="grid-item-post hvr-grow"> \
             <div id="inline-media" v-if=" tweet.ifmediaexists "> \
                 <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
             </div> \
@@ -204,6 +209,7 @@
                     <span class="icon-color"><i class="fa fa-comment fa-lg"></i></span> {{ tweet.comments }} </a></p> \
       	 <p class="align-right"><a href="{{ tweet.url }}"><span class="icon-color"> {{{ tweet.renderedClientThumbnail }}} </span></a></p> \
 		 <div style="clear: both;"></div> \
+		 </div> \
     <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
         <div class="modal-dialog" role="document"> \
             <div class="modal-content"> \
