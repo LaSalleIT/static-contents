@@ -160,10 +160,6 @@ div.modal-body p.align-right{
     column-break-inside: avoid;
 }
 
-.gird-item:hover {
-	
-}
-
 /* .grid-item-body in lieu of .panel-body to be more consistent with padding */
 .grid-item-body {
 	/* */
@@ -171,9 +167,11 @@ div.modal-body p.align-right{
 
 /* .grid-item-post for all within the grid-item not including the modal */
 .grid-item-post {
-	background: #fff;
+    display: inline-block;
+    background: #fff;
     padding: 0.8em;
     margin: 0 0 1.5em;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
