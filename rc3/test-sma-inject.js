@@ -84,10 +84,12 @@
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
                 <br> \
             </div> \
+            <div class="grid-item-footer"> \
 		 <p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-lg"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
                     <span class="icon-color"><i class="fa fa-comment fa-lg"></i></span> {{ tweet.comments }}</a></p> \
 		 <p class="align-right"><a href="{{ tweet.url }}"><span class="icon-color">{{{ tweet.renderedClientThumbnail }}}</span></a></p> \
 		 <div style="clear: both;"></div> \
+     </div> \
 		 </div> \
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
@@ -134,10 +136,12 @@
                 <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
                 <br> \
             </div> \
+            <div class="grid-item-footer"> \
 		<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-lg"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
                     <span class="icon-color"><i class="fa fa-comment fa-lg"></i></span> {{ tweet.comments }} </a></p> \
       	<p class="align-right"><a href="{{ tweet.url }}"><span class="icon-color"> {{{ tweet.renderedClientThumbnail }}} </span></a></p> \
 		<div style="clear: both;"></div> \
+    </div> \
 	</div> \
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
@@ -207,11 +211,13 @@
             <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
             <br> \
         </div> \
+        <div class="grid-item-footer"> \
 		 <p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-lg"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
                     <span class="icon-color"><i class="fa fa-comment fa-lg"></i></span> {{ tweet.comments }} </a></p> \
       	 <p class="align-right"><a href="{{ tweet.url }}"><span class="icon-color"> {{{ tweet.renderedClientThumbnail }}} </span></a></p> \
 		 <div style="clear: both;"></div> \
 		 </div> \
+     </div> \
     <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
         <div class="modal-dialog" role="document"> \
                 <div class="modal-body"> \

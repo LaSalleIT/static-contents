@@ -168,14 +168,18 @@ div.modal-body p.align-right{
   display: block;
   max-width: 100%;
   height: auto;
+  padding: 0.8em;
 }
 
+/* grid footer container */
+.grid-item-footer {
+  padding: 0.8em;
+}
 /* .grid-item-post for all within the grid-item not including the modal */
 .grid-item-post {
     display: inline-block;
     position: floid;
     background: #fff;
-    padding: 0.8em;
     margin: 0 0 1.5em;
     height: 100%;
     width: 100%;
@@ -236,5 +240,3 @@ div.modal-body p.align-right{
 /*
  FS Site Override
 */
-
-
