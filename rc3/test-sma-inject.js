@@ -5,17 +5,17 @@
          * @author Alex Fang, Owen Lanphear
          * @email alex [at] lschs.org
          * @date 6/8/2016
- ______________ 
+ ______________
 < BY ALEX FANG! >
- -------------- 
+ --------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
 
          */
-      
+
       	var onePageCount = 25; //Register counter
-      
+
         var counter = 1;
         $(document).ready(function () {
 			$("#sma-load-more-btn").click( function() {
@@ -30,13 +30,13 @@
         Vue.config.devtools = true;
         //XHR requests + Vue rendering
         var handleResponse = function (status, response) {
-                
+
           		if(window.screen.width <= 400) {
                 	onePageCount = 3; //For mobile devices
                 } else if(window.screen.width <= 700) {
                 	onePageCount = 9; //For iPad Mini or equivalent
                 } //responsive layout
-          
+
                 var tweets = JSON.parse(response);
                 var finalResult = [];
                 console.log(tweets);
@@ -92,11 +92,6 @@
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
                 <div class="modal-content"> \
-                    <div class="modal-header"> \
-                        <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
-                        </i> \
-                    <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
-                </div> \
                 	<div class="modal-body"> \
                 		<div style="max-width: 50%;" id="horizontal-resize"> \
                  			<div id="inline-media" v-if=" tweet.ifmediaexists "> \
@@ -105,13 +100,22 @@
                 		</div> \
 						<br><br> \
 				<div style="overflow: hidden;" id="text-resize"> \
+            <div class="modal-header"> \
+                <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
+                  </i> \
+                  <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
+                  </div> \
+                  <div class="modal-content"> \
                     			<h4 style="padding-left: 10px; color: black;">{{{ tweet.text }}}</h4> \
 						<br><br> \
+            </div> \
+            <div class="modal-footer"> \
 					<div id="buttom-buttons"> \
 						<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
                 				<span class="icon-color"><i class="fa fa-comment fa-2x"></i></span> {{ tweet.comments }}</a></p> \
                     				<p class="align-right"><a href="{{ tweet.url }}">Original Post</a></p> \
                 			</div> \
+                      </div> \
                 		</div> \
                 	</div> \
                 	<div class="modal-footer"> \
@@ -140,12 +144,6 @@
 	</div> \
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
-                <div class="modal-content"> \
-                    <div class="modal-header"> \
-                        <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
-                        </i> \
-                    <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
-                </div> \
                 	<div class="modal-body"> \
                 		<div style="max-width: 50%;" id="horizontal-resize"> \
                     			<div id="inline-media" v-if=" tweet.ifmediaexists "> \
@@ -154,13 +152,23 @@
                			</div> \
                     							<br><br> \
                 		<div style="overflow: hidden;" id="text-resize"> \
+                    <div class="modal-content"> \
+                        <div class="modal-header"> \
+                            <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
+                            </i> \
+                        <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
+                    </div> \
+                    <div class="modal-content"> \
 					<h4 style="padding-left: 10px; max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
 					<br><br> \
+          </div> \
+          <div class="modal-footer"> \
                 			<div id="buttom-buttons"> \
 						<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
                 				<span class="icon-color"><i class="fa fa-comment fa-2x"></i></span> {{ tweet.comments }}</a></p> \
                     				<p class="align-right"><a href="{{ tweet.url }}">Original Post</a></p> \
                 			</div> \
+                      </div> \
                 		</div> \
                 	</div> \
                 <div class="modal-footer"> \
@@ -212,12 +220,6 @@
 		 </div> \
     <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
         <div class="modal-dialog" role="document"> \
-            <div class="modal-content"> \
-                <div class="modal-header"> \
-                        <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
-                        </i> \
-                    <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
-                </div> \
                 <div class="modal-body"> \
                 	<div style="max-width: 50%;" id="horizontal-resize"> \
                     		<div id="inline-media" v-if=" tweet.ifmediaexists "> \
@@ -226,13 +228,23 @@
                 	</div> \
 					<br><br> \
 			<div style="overflow: hidden;" id="text-resize"> \
+      <div class="modal-content"> \
+          <div class="modal-header"> \
+                  <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
+                  </i> \
+              <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
+          </div> \
+          <div class="modal-content"> \
                     		<h4 class="align-right" style="color: black;">{{{ tweet.text }}}</h4> \
 					<br><br> \
+          </div> \
+          <div class="modal-footer"> \
                 		<div id="buttom-buttons"> \
 					<p class="align-left"><a href="{{ tweet.url }}"><span class="icon-color"><i class="fa fa-thumbs-up fa-2x"></i></span> {{ tweet.likes }} &nbsp;&nbsp; \
                 			<span class="icon-color"><i class="fa fa-comment fa-2x"></i></span> {{ tweet.comments }}</a></p> \
                     			<p class="align-right"><a href="{{ tweet.url }}">Original Post</a></p> \
                 		</div> \
+                    </div> \
                 	</div> \
         	 </div> \
         	<div class="modal-footer"> \
