@@ -154,17 +154,7 @@ div.modal-body p.align-right{
 
 .grid-item {
     display: inline-block;
-    background: #fff;
-    padding: 0.8em;
-    margin: 0 0 1.5em;
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc; /* #abbaa44 */
-    box-sizing: border-box;
-    cursor:pointer; /* ipad fix */
-    z-index: 1000; /* <Real World CSS>, OR LY & Associates, LLC.  */
+    /* actual styles defined in .grid-item-post wrapper */
     -webkit-column-break-inside: avoid; /* suggested by http://stackoverflow.com/questions/18024269/css3-columns-background-cutoff */
     -moz-column-break-inside: avoid;
     column-break-inside: avoid;
@@ -181,7 +171,16 @@ div.modal-body p.align-right{
 
 /* .grid-item-post for all within the grid-item not including the modal */
 .grid-item-post {
-	/* */
+	background: #fff;
+    padding: 0.8em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc; /* #abbaa44 */
+    box-sizing: border-box;
+    cursor:pointer; /* ipad fix */
 }
 
 /* make y'all responsive */
