@@ -168,6 +168,7 @@ div.modal-body p.align-right{
 /* .grid-item-post for all within the grid-item not including the modal */
 .grid-item-post {
     display: inline-block;
+    position: floid;
     background: #fff;
     padding: 0.8em;
     margin: 0 0 1.5em;
