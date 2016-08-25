@@ -97,7 +97,7 @@
                         <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
                   </div> \
                 </div> \
-                <div style="max-width: 50%;" id="horizontal-resize" class="align-right"> \
+                <div style="max-width: 50%;" id="horizontal-resize" class="align-right" style="background: white;"> \
                     <div class="modal-header"> \
                         <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
                         </i> \
