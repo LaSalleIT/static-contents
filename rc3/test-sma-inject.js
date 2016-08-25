@@ -91,17 +91,18 @@
 		 </div> \
         <div class="modal fade" id="{{ tweet.count }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> \
             <div class="modal-dialog" role="document"> \
-                <div class="modal-content"> \
-                                		<div style="max-width: 50%;" id="horizontal-resize"> \
-                 			<div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                        			<img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
-                    			</div> \
-                		</div> \
+               <div class="modal-content"> \
+                <div style="max-width: 50%;" class="align-left" id="horizontal-resize"> \
+                  <div id="inline-media" v-if=" tweet.ifmediaexists "> \
+                        <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
+                  </div> \
+                </div> \
+                <div style="max-width: 50%;" id="horizontal-resize" class="align-right"> \
                     <div class="modal-header"> \
                         <i class="fa fa-times-circle-o fa-2x" data-dismiss="modal" aria-label="Close"> \
                         </i> \
                     <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
-                </div> \
+                   </div> \
                 	<div class="modal-body"> \
 						<br><br> \
 				<div style="overflow: hidden;" id="text-resize"> \
@@ -118,6 +119,8 @@
 				  <div style="clear: both;"></div> \
                 	</div> \
                 </div> \
+               </div> \
+               <div style="clear: both;"></div> \
             </div> \
         </div> \
    </div> \
