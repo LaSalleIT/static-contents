@@ -118,10 +118,10 @@
                 			</div> \
                       </div> \
                 		</div> \
+                		            <div style="clear: both;"></div> \
                 	</div> \
                 </div> \
             </div> \
-            <div style="clear: both;"></div> \
         </div> \
    </div> \
                 ';
@@ -159,7 +159,7 @@
                         <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                     </div> \
           <div class="modal-news-content"> \
-					     <h4 style="padding-left: 10px; max-width: 50%; color: black;">{{{ tweet.text }}}</h4> \
+					     <h4>{{{ tweet.text }}}</h4> \
           </div> \
           <br><br> \
           <div class="modal-footer"> \
