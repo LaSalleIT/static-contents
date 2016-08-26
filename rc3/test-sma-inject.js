@@ -119,9 +119,6 @@
                       </div> \
                 		</div> \
                 	</div> \
-                	<div class="modal-footer"> \
-				  <div style="clear: both;"></div> \
-                	</div> \
                 </div> \
             </div> \
         </div> \
@@ -173,9 +170,6 @@
                       </div> \
                 		</div> \
                 	</div> \
-                <div class="modal-footer"> \
-				  <div style="clear: both;"></div> \
-            	</div> \
            </div> \
         </div> \
     </div> \
@@ -251,9 +245,6 @@
                     </div> \
                 	</div> \
         	 </div> \
-        	<div class="modal-footer"> \
-				  <div style="clear: both;"></div> \
-		</div> \
 	</div> \
     </div> \
 </div> \
