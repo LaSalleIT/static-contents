@@ -159,7 +159,7 @@
                         <h4 class="modal-title" id="myModalLabel">{{{ tweet.renderedClientThumbnail }}}</h4> \
                     </div> \
           <div class="modal-news-content"> \
-					     <h4>{{{ tweet.text }}}</h4> \
+					     <h4 style="color: black;">{{{ tweet.text }}}</h4> \
           </div> \
           <br><br> \
           <div class="modal-footer"> \
