@@ -42,19 +42,6 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.btn-default:hover, .btn-default:focus, .btn-default:active {
-  border-radius: 15px 0px 15px 0px;
-  color: #cfb53b;
-  background: #abbaa44;
-  -webkit-animation-name: btn-default;
-  animation-name: btn-default;
-  -webkit-animation-duration: 0.15s;
-  animation-duration: 0.15s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
 
 .align-left {
 	float: left;
