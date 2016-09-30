@@ -4,9 +4,19 @@
  @date 9/30/2016
  @email alex AT lschs.org
  */
+
+/*
+ Purpose
+ -------
+ College Counseling overview page (http://www.lschs.org/academics/college-counseling/overview)
+ deserves a special layout. The Aggregator isn't laid out full length across the webpage.
+ which makes the normal 6-8 columns layout wierd.
+ Fix it by adjusting everything to <= 4 columns.
+ */
  
  /*
   Override to make fit
+ */
 
 @media only screen and (min-width: 400px) {
     .grid {
@@ -49,7 +59,3 @@
     }
 } /* Desktop */
 
-
-/*
- Make style better!
-  */
