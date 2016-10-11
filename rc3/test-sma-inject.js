@@ -15,9 +15,9 @@
          */
 
       	var onePageCount = 25; //Register counter
-	var overrideCounterHdpi = $("#override-count-hdpi").addr('class'); // Self-defined counters
-	var overrideCounterMdpi = $("#override-count-mdpi").addr('class');
-	var overrideCounterLdpi = $("#override-count-ldpi").addr('class');
+	var overrideCounterHdpi = $("#override-count-hdpi").attr('class'); // Self-defined counters
+	var overrideCounterMdpi = $("#override-count-mdpi").attr('class');
+	var overrideCounterLdpi = $("#override-count-ldpi").attr('class');
 
         var counter = 1;
         $(document).ready(function () {
