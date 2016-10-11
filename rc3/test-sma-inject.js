@@ -15,6 +15,9 @@
          */
 
       	var onePageCount = 25; //Register counter
+	var overrideCounterHdpi = $("#override-count-hdpi").addr('class'); // Self-defined counters
+	var overrideCounterMdpi = $("#override-count-mdpi").addr('class');
+	var overrideCounterLdpi = $("#override-count-ldpi").addr('class');
 
         var counter = 1;
         $(document).ready(function () {
@@ -31,10 +34,23 @@
         //XHR requests + Vue rendering
         var handleResponse = function (status, response) {
 
-          		if(window.screen.width <= 400) {
+		if(overrideCounterHdpi) {
+			// load from page override selector
+			onePageCount = overrideCounterHdpi; 
+		}
+		
+          	if(window.screen.width <= 400) {
+			if(overrideCounterLdpi) {
+				onePageCount = overrideCounterLdpi;
+			} else {
                 	onePageCount = 3; //For mobile devices
-                } else if(window.screen.width <= 700) {
-                	onePageCount = 9; //For iPad Mini or equivalent
+			}
+		} else if(window.screen.width <= 700) {
+			if(overrideCounterMdpi) {
+				onePageCount = overrideCounterMdpi;
+			} else {
+                		onePageCount = 9; //For iPad Mini or equivalent
+			}
                 } //responsive layout
 
                 var tweets = JSON.parse(response);
