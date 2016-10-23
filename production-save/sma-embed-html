@@ -1,0 +1,50 @@
+        <!-- The
+      Infamous 
+       Social Media
+        Aggregator -->
+<div id="query-settings" class="simpleRequest/getRateLimited/600">
+</div>
+<div class="container">
+	<br>
+	<div class="row">
+		<div id="sma-widget-container" class="grid">
+		</div>
+	</div>
+	<center><button class="btn btn-lg btn-default" id="sma-load-more-btn">Load More</button></center>
+	<br>
+	<br>
+</div>
+<div class="af-ctrl-postrender">
+	<!--load javascript-->
+	<!--load JSON requests-->
+    <!--
+ ________________________________________
+/ Reisner's Rule of Conceptual Inertia:  \
+|                                        |
+| If you think big enough, you'll never  |
+| have to do it.                         |
+|                                        |
+| Proudly (purposefully) added by Alex   |
+| Fang < alex [at] lschs.org > in the    |
+\ purpose of fulfilling the hubris.      /
+ ----------------------------------------
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \
+           /     /  \/_/    //   |  \  \
+           @_^_@'/   \/_   //    |   \   \
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\ From now on, anything in this part of the code
+    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.  that is confirmed as a bug
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `. will be *officially* recognized as a feature.
+ (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
+             ///.----..>        \             _ -~             `.  ^-`  ^-_
+               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                  /.-~
+
+    -->
+	<script  type="text/javascript" src="/web/20161011035656js_/https://lasalleit.github.io/static-contents/rc3/test-sma-inject.js">	</script>
+</div>
