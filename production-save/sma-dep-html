@@ -1,0 +1,11 @@
+<script src="https://lasalleit.github.io/static-contents/bootstrap.js"></script>
+
+ <!---Vue.js--->
+  <script src="https://lasalleit.github.io/static-contents/vue.js"></script>
+
+<!--Autolink-->
+ <script src='https://lasalleit.github.io/static-contents/autolink.js'></script>
+
+<!--TwitterText-->
+<script src='https://lasalleit.github.io/static-contents/twitter-text.js'></script>
+
