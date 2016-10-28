@@ -286,6 +286,8 @@ onePageCount = overrideCounterMdpi;
 $(document).ready(function () {
       // if there still are more boxes, load them, and decrease bottomCounter
       $("#sma-load-more-btn").click( function() {
+           
+           console.log("Button click onalert. Current count:" + bottomCounter);
            $('.hidden-binding-group-' + counter).attr('style', 'display: block;');
            counter++;
            bottomCounter--;
@@ -304,6 +306,7 @@ $(document).ready(function () {
 
       // if there still are more boxes, load them, and decrease bottomCounter
        $("#sma-load-more-btn").click( function() {
+           console.log("Button click onalert. Current count:" + bottomCounter);
            $('.hidden-binding-group-' + counter).attr('style', 'display: block;');
            counter++;
            bottomCounter--;
