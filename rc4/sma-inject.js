@@ -15,7 +15,7 @@
 
  */
 
-console.log("version: hippomama ");
+console.log("version: tunaSavesMyLifev1.0 ");
 var onePageCount = 25; //Register counter
 var overrideCounterHdpi = $("#override-count-hdpi").attr('class'); // Self-defined counters
 var overrideCounterMdpi = $("#override-count-mdpi").attr('class');
