@@ -281,8 +281,6 @@ onePageCount = overrideCounterMdpi;
                     tweets
                 }
             });
-           
-$(document).ready(function () {
 
      console.log("Sean is here");
      
@@ -302,7 +300,6 @@ $(document).ready(function () {
                    bottomCounter = 0;
            }
       });
-     }); // end of jQuery parse code
  }
 } // end of callback function
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
