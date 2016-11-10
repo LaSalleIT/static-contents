@@ -307,6 +307,8 @@ xmlhttp.send(null);
 $("#sma-load-more-btn").click( function() {
            // console.log("Button click onalert. Current count:" + bottomCounter);
            $('.hidden-binding-group-' + counter).attr('style', 'display: block;');
+           $("#sma-load-more-btn").click(function(){ window.location = 'http://www.lschs.org/news-events/socialmedia'; });
+
            counter++;
            bottomCounter--;
            if(bottomCounter == 1) {
@@ -317,7 +319,6 @@ $("#sma-load-more-btn").click( function() {
              // http://www.lschs.org/news-events/socialmedia
              // console.log("Everything loaded. Revising button element...222");
              $("#sma-load-more-btn").text("Visit Social Media Page");
-             $("#sma-load-more-btn").click(function(){ window.location = 'http://www.lschs.org/news-events/socialmedia'; });
              counter ++;
              bottomCounter = 0;
            }
