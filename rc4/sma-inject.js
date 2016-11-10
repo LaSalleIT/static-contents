@@ -322,3 +322,19 @@ xmlhttp.onreadystatechange = handleStateChange;
 xmlhttp.open("GET", query, true);
 xmlhttp.send(null);
 /* End of async call, no code shall be added here */
+
+       $("#sma-load-more-btn").click( function() {
+           console.log("Button click onalert. Current count:" + bottomCounter);
+           $('.hidden-binding-group-' + counter).attr('style', 'display: block;');
+           counter++;
+           bottomCounter--;
+           if(bottomCounter <= 0) {
+            // if no more can be loaded, goto social media page (not aggregator :( )
+             // http://www.lschs.org/news-events/socialmedia
+             console.log("Everything loaded. Revising button element...222");
+             $("#sma-load-more-btn").text("Visit Social Media Page");
+             $("#sma-load-more-btn").prop('href', 'http://www.lschs.org/news-events/socialmedia');
+             counter ++;
+             bottomCounter = 0;
+           }
+      });
