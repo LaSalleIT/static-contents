@@ -284,6 +284,8 @@ onePageCount = overrideCounterMdpi;
            
 $(document).ready(function () {
 
+     console.log("Sean is here");
+     
       // if there still are more boxes, load them, and decrease bottomCounter
        $("#sma-load-more-btn").click( function() {
            console.log("Button click onalert. Current count:" + bottomCounter);
