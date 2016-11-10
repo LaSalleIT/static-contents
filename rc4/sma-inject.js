@@ -15,7 +15,7 @@
 
  */
 
-console.log("version: SHRAY1.1 ");
+console.log("version: NPM0.1 ");
 var onePageCount = 25; //Register counter
 var overrideCounterHdpi = $("#override-count-hdpi").attr('class'); // Self-defined counters
 var overrideCounterMdpi = $("#override-count-mdpi").attr('class');
@@ -307,12 +307,12 @@ xmlhttp.send(null);
 $("#sma-load-more-btn").click( function() {
            // console.log("Button click onalert. Current count:" + bottomCounter);
            $('.hidden-binding-group-' + counter).attr('style', 'display: block;');
-           $("#sma-load-more-btn").click(function(){ window.location = 'http://www.lschs.org/news-events/socialmedia'; });
-
            counter++;
            bottomCounter--;
            if(bottomCounter == 1) {
                 $("#sma-load-more-btn").text("Visit Social Media Page");
+                $("#sma-load-more-btn").click(function(){ window.location = 'http://www.lschs.org/news-events/socialmedia'; });
+
            }
            if(bottomCounter <= 0) {
             // if no more can be loaded, goto social media page (not aggregator :( )
