@@ -14,6 +14,9 @@ if (!document.getElementById(cssId))
     link.media = 'all';
     head.appendChild(link);
 }
+document.getElementsByTagName("head")[0].appendChild('<link href="//lasalleit.github.io/static-contents/bootstrap.css" rel="stylesheet" type="text/css" />');
+
+
 var loadJS = function(url, implementationCode, location){
     //url is URL of external file, implementationCode is the code
     //to be called from the file, location is the location to 
