@@ -1,4 +1,29 @@
 console.log("Say hi: bonner@lschs.org :-)");
+
+// :( do injection b/c we'll have no other choice...
+
+var cssId = 'bootstrap-inject';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://lasalleit.github.io/static-contents/bootstrap-theme.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
+
+// we'll also inject a tiny-little jaascript...
+var script = document.createElement('script');
+script.onload = function () {
+    //do stuff with the script
+};
+script.src = "https://lasalleit.github.io/static-contents/bootstrap.js";
+
+document.head.appendChild(script); //or something of the likes
+
 var onePageCount = 25; //Register counter
 var overrideCounterHdpi = $("#override-count-hdpi").attr('class'); // Self-defined counters
 var overrideCounterMdpi = $("#override-count-mdpi").attr('class');
