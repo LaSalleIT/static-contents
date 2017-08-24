@@ -14,16 +14,23 @@ if (!document.getElementById(cssId))
     link.media = 'all';
     head.appendChild(link);
 }
+var loadJS = function(url, implementationCode, location){
+    //url is URL of external file, implementationCode is the code
+    //to be called from the file, location is the location to 
+    //insert the <script> element
 
-// we'll also inject a tiny-little jaascript...
-var script = document.createElement('script');
-script.onload = function () {
-    //do stuff with the script
-    console.log("script onloaded");
+    var scriptTag = document.createElement('script');
+    scriptTag.src = url;
+
+    scriptTag.onload = implementationCode;
+    scriptTag.onreadystatechange = implementationCode;
+
+    location.appendChild(scriptTag);
 };
-script.src = "https://lasalleit.github.io/static-contents/bootstrap.js";
-
-document.head.appendChild(script); //or something of the likes
+var yourCodeToBeCalled = function(){
+//your code goes here
+}
+loadJS('https://lasalleit.github.io/static-contents/bootstrap.js', function(){console.log("onCallback");}, document.body);
 
 var onePageCount = 25; //Register counter
 var overrideCounterHdpi = $("#override-count-hdpi").attr('class'); // Self-defined counters
