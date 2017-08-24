@@ -10,7 +10,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://lasalleit.github.io/static-contents/bootstrap-theme.css';
+    link.href = 'https://lasalleit.github.io/static-contents/bootstrap.css';
     link.media = 'all';
     head.appendChild(link);
 }
@@ -19,6 +19,7 @@ if (!document.getElementById(cssId))
 var script = document.createElement('script');
 script.onload = function () {
     //do stuff with the script
+    console.log("script onloaded");
 };
 script.src = "https://lasalleit.github.io/static-contents/bootstrap.js";
 
