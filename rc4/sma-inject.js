@@ -14,7 +14,7 @@ if (!document.getElementById(cssId))
     link.media = 'all';
     head.appendChild(link);
 }
-document.getElementsByTagName("head")[0].appendChild('<link href="//lasalleit.github.io/static-contents/bootstrap.css" rel="stylesheet" type="text/css" />');
+//document.getElementsByTagName("head")[0].appendChild('<link href="//lasalleit.github.io/static-contents/bootstrap.css" rel="stylesheet" type="text/css" />');
  /**
  * Loads a CSS file from the supplied URL
  * @param {String} url    The URL of the CSS file, if its relative
