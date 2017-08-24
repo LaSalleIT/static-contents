@@ -1,21 +1,4 @@
-/**
- *  LSTweets renderer Vue frontend
- * Formulates JSON data from the renderer and
- * displays in HTML
- * @author Alex Fang, Owen Lanphear
- * @email alex [at] lschs.org
- * @date 6/8/2016
- * @date 10/28/16
-     ______________
-    < BY ALEX FANG! >
-     --------------
-            \   ^__^
-             \  (oo)\_______
-                (__)\       )\/\
-
- */
-
-console.log("version: NPM0.1 ");
+console.log("Say hi: bonner@lschs.org :-)");
 var onePageCount = 25; //Register counter
 var overrideCounterHdpi = $("#override-count-hdpi").attr('class'); // Self-defined counters
 var overrideCounterMdpi = $("#override-count-mdpi").attr('class');
@@ -29,30 +12,27 @@ $("#sma-load-more-btn").click( function() {
               counter++;
     });
 });
-var query = 'https://lscode.lschs.org/sma/rest/' + $('#query-settings').attr('class');
-//Load Vue devtools
-//that we'll never ever use,
-//but just in case...
-Vue.config.devtools = true;
+var query = 'https://lscode.lschs.org/sma/rest/' + $('#query-settings').attr('class'); // not good...
+
 //XHR requests + Vue rendering
 var handleResponse = function (status, response) {
 
 if(overrideCounterHdpi) {
-// load from page override selector
-onePageCount = overrideCounterHdpi; 
+     // load from page override selector
+     onePageCount = overrideCounterHdpi; 
 }
 
 if(window.screen.width <= 400) {
-if(overrideCounterLdpi) {
-onePageCount = overrideCounterLdpi;
-} else {
+     if(overrideCounterLdpi) {
+          onePageCount = overrideCounterLdpi;
+     } else {
           onePageCount = 3; //For mobile devices
-}
+     }
 } else if(window.screen.width <= 700) {
-if(overrideCounterMdpi) {
-onePageCount = overrideCounterMdpi;
+     if(overrideCounterMdpi) {
+          onePageCount = overrideCounterMdpi;
 } else {
-            onePageCount = 9; //For iPad Mini or equivalent
+          onePageCount = 9; //For iPad Mini or equivalent
 }
 } //responsive layout
 
@@ -99,7 +79,7 @@ onePageCount = overrideCounterMdpi;
             originalText = ' <div class="grid-item" id="vue-js-binding" v-for="tweet in tweets"> \
             <div class="grid-item-post hvr-grow"> \
         <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-            <img src="{{ tweet.mediaurl }} " class="img-responsive" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
+            <img v-bind:src="{ tweet.mediaurl } " class="img-responsive" alt="" data-toggle="modal" data-target="#{{ tweet.count }}" />  \
         </div> \
     <div class="grid-item-body" data-toggle="modal" data-target="#{{ tweet.count }}"> \
         <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
@@ -118,7 +98,7 @@ onePageCount = overrideCounterMdpi;
           <div class="modal-body"> \
             <div style="max-width: 50%;" id="horizontal-resize"> \
               <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                      <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
+                      <img class="align-left" v-bind:src="{ tweet.mediaurl }" alt="" class="img-responsive"/> \
                   </div> \
             </div> \
 <div style="overflow: hidden;" id="text-resize"> \
@@ -151,7 +131,7 @@ onePageCount = overrideCounterMdpi;
  style="display: none;"> \
  <div class="grid-item-post hvr-grow"> \
         <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-            <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
+            <img v-bind:src="{ tweet.mediaurl } " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
         </div> \
     <div class="grid-item-body"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
         <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
@@ -170,7 +150,7 @@ onePageCount = overrideCounterMdpi;
           <div class="modal-body"> \
             <div style="max-width: 50%;" id="horizontal-resize"> \
                   <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                      <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
+                      <img class="align-left" v-bind:src="{ tweet.mediaurl }" alt="" class="img-responsive"/> \
                   </div> \
             </div> \
             <div style="overflow: hidden;" id="text-resize"> \
@@ -226,7 +206,7 @@ onePageCount = overrideCounterMdpi;
               v-for="tweet in tweets"> \
               <div class="grid-item-post hvr-grow"> \
     <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-        <img src="{{ tweet.mediaurl }} " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
+        <img v-bind:src="{ tweet.mediaurl } " class="img-responsive" alt=""  data-toggle="modal" data-target="#{{ tweet.count }}"  /> \
     </div> \
 <div class="grid-item-body"  data-toggle="modal" data-target="#{{ tweet.count }}"> \
     <p class="soft-wrapping">{{{ tweet.shortenedText }}}</p> \
@@ -244,7 +224,7 @@ onePageCount = overrideCounterMdpi;
         <div class="modal-body"> \
           <div style="max-width: 50%;" id="horizontal-resize"> \
                 <div id="inline-media" v-if=" tweet.ifmediaexists "> \
-                    <img class="align-left" src="{{ tweet.mediaurl }}" alt="" class="img-responsive"/> \
+                    <img class="align-left" v-bind:src="{ tweet.mediaurl }" alt="" class="img-responsive"/> \
                 </div> \
           </div> \
   <br><br> \
