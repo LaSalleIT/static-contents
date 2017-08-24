@@ -15,7 +15,27 @@ if (!document.getElementById(cssId))
     head.appendChild(link);
 }
 document.getElementsByTagName("head")[0].appendChild('<link href="//lasalleit.github.io/static-contents/bootstrap.css" rel="stylesheet" type="text/css" />');
-
+ /**
+ * Loads a CSS file from the supplied URL
+ * @param {String} url    The URL of the CSS file, if its relative
+                          it will be to the current page's url
+ * @return {HTMLElement}  The <link> which was appended to the <head>
+ */
+ function loadcss(url) {
+   var head = document.getElementsByTagName('head')[0],
+   link = document.createElement('link');
+   link.type = 'text/css';
+   link.rel = 'stylesheet';
+   link.href = url;
+   head.appendChild(link);
+   return link;
+ }
+ // I've used raw DOM API here, but it would be even simpler
+ // with something like jQuery
+ var button = document.getElementsByTagName('button')[0];
+ button.addEventListener('click', function(ev) {
+ loadcss('//lasalleit.github.io/static-contents/bootstrap.css');
+ }, false);
 
 var loadJS = function(url, implementationCode, location){
     //url is URL of external file, implementationCode is the code
